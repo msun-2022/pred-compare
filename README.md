@@ -52,7 +52,7 @@ id,V1,V2,V3,V4,Y,method_a,method_b,method_c
 ### Command-line
 
 ```bash
-pred-compare \
+prediction_comparison \
   --input data.csv \
   --truth Y \
   --preds method_a method_b method_c method_d method_e \
@@ -64,7 +64,7 @@ pred-compare \
 
 ```python
 import pandas as pd
-from pred-compare import run_comparison
+from prediction_comparison import run_comparison
 
 df = pd.read_csv("data.csv")
 result = run_comparison(
